@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Descubra sua trilha</h1>
+            <p>Responda às perguntas e descubra qual trilha combina com você!
+              <br>
+              (Java, Marketing, IA e dados e Gestão comercial)
+            </p>
+        </header>
+
+        <form id="quiz-form">
+            <section class="card">
+                <h2>Sobre você</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" required>
+            </section>
+
+            <section class="card">
+                <h2>Escolha suas respostas</h2>
+
+                <fieldset>
+                    <legend> Qual atividade você prefere?</legend>
+                    <label><input type="radio" name="q1" value="java" required>
+                        Programar sistemas e resolver problemas.</label>
+                    <label><input type="radio" name="q1" value="ia">
+                        Analisar dados e explorar inteligência artificial.</label>
+                    <label><input type="radio" name="q1" value="gestao">
+                        Organizar equipes e planejar projetos.</label>
+                    <label><input type="radio" name="q1" value="marketing">
+                        Criar campanhas e divulgar ideias.</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Qual habilidade mais combina com você?</legend>
+                    <label><input type="radio" name="q2" value="java" required>
+                        Raciocínio lógico.</label>
+                    <label><input type="radio" name="q2" value="ia">
+                        Curiosidade e análise.</label>
+                    <label><input type="radio" name="q2" value="gestao">
+                        Liderança e organização.</label>
+                    <label><input type="radio" name="q2" value="marketing">
+                        Criatividade e comunicação.</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Como você resolveria um problema na equipe?</legend>
+                    <label><input type="radio" name="q3" value="java" required>
+                        Procuraria erros no código e corrigiria.</label>
+                    <label><input type="radio" name="q3" value="ia">
+                        Analisaria os dados para encontrar a causa.</label>
+                    <label><input type="radio" name="q3" value="gestao">
+                        Organizaria as tarefas e as prioridades.</label>
+                    <label><input type="radio" name="q3" value="marketing">
+                        Pensaria em uma forma criativa de comunicar a solução.</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Qual resultado deixaria você mais feliz?</legend>
+                    <label><input type="radio" name="q4" value="java" required>
+                        Criar um aplicativo funcional.</label>
+                    <label><input type="radio" name="q4" value="ia">
+                        Descobrir padrões e informações importantes.</label>
+                    <label><input type="radio" name="q4" value="gestao">
+                        Alcançar uma meta com a equipe.</label>
+                    <label><input type="radio" name="q4" value="marketing">
+                        Fazer uma campanha alcançar muitas pessoas.</label>
+                </fieldset>
+            </section>
+
+            <button type="submit">Descobrir minha trilha</button>
+          
+        </form>
+
+        <section id="resultado" class="card resultado" hidden>
+            <p class="subtitulo">RESULTADO </p>
+            <div id="icone" class="icone"></div>
+            <p id="pessoa"></p>
+            <h2 id="perfil"></h2>
+            <p id="categoria" class="categoria"></p>
+            <p id="descricao"></p>
+            <button type="button" id="refazer">-refaça-</button>
+        </section>
+
+        <footer> Saiba sua trilha.</footer>
+    </main>
+
+</body>
+</html>
